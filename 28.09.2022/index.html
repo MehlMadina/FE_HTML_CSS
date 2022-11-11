@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <title>Shark App</title>
+</head>
+
+<body>
+    <button class="burger" onclick="toggleMenu()"><i class="las la-grip-lines-vertical"></i></button>
+    <aside class="menu">
+        <div class="logo">
+            <h3 class="logo__title">Shark</h3>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a class="nav__link" href="#">
+                        <span><i class="lab la-buffer"></i></span>
+                        <p class="menu__item">Dashboard</p>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">
+                        <span><i class="las la-chart-bar"></i></span>
+                        <p class="menu__item">Statistic</p>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">
+                        <span><i class="lab la-discourse"></i></span>
+                        <p class="menu__item">Support</p>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link nav__link--active" href="#">
+                        <span><i class="las la-inbox"></i></span>
+                        <p class="menu__item">Inbox</p>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">
+                        <span><i class="las la-rocket"></i></span>
+                        <p class="menu__item">Goals</p>
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#">
+                        <span><i class="las la-link"></i></span>
+                        <p class="menu__item">Links</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="navigation">
+            <ul class="nav__list">
+                <h4 class="caption">Projects</h4>
+                <li class="nav__item-second">
+                    <a href="#">
+                        <span class="icon__item square__orange"></span>
+                        Callipso<span class="amount__messages">+4</span>
+                    </a>
+                </li>
+                <li class="nav__item-second">
+                    <a href="#">
+                        <span class="icon__item square__blue"></span>
+                        BWS bank<span class="amount__messages">+5</span>
+                    </a>
+                </li>
+                <li class="nav__item-second">
+                    <a href="#">
+                        <span class="icon__item square__violet"></span>
+                        Unicorn app<span class="amount__messages">+1</span>
+                    </a>
+                </li>
+                <li class="nav__item-second">
+                    <a href="#">
+                        <span class="icon__item square__green"></span>
+                        Salt<span class="amount__messages">+3</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <button class="button" type="button">Show more</button>
+    </aside>
+    <main>
+        <section class="inbox">
+            <div class="inbox__title-wrp">
+                <h2 class="inbox__title">Inbox</h2>
+                <button class="inbox__button" type="button">
+                    <i class="las la-plus"></i>
+                </button>
+            </div>
+            <div class="inbox__switcher">
+                <button class="inbox__switcher-button--active">General</button>
+                <button class="inbox__switcher-button">Total</button>
+            </div>
+            <ul class="list">
+                <div class="online__pointer"></div>
+                <div class="item">
+                    <div class="image">
+                        <figure class="avatar-container">
+                            <img src="./icon/junge2.png" alt="avatar__img" class="avatar" />
+                    </div>
+                    <div class="user__desc">
+                        <p class="user__name">Michael.B</p>
+                        <p class="user__position">Project manager</p>
+                        <div class="user__amount--message">2</div>
+                        <p class="user__message">Sent you the file</p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="image">
+                        <figure class="avatar-container">
+                            <img src="./icon/junge2.png" alt="avatar__img" class="avatar" />
+                    </div>
+                    <div class="user__desc">
+                        <p class="user__name">Katie.W</p>
+                        <p class="user__position">Middle designer</p>
+                        <div class="user__amount--message">3</div>
+                        <p class="user__message">See you tomorrow...</p>
+                    </div>
+
+                    <div class="item item-another">
+                        <div class="image">
+                            <figure class="avatar-container">
+                                <img src="./icon/junge2.png" alt="avatar__img" class="avatar" />
+                        </div>
+                        <div class="user__desc user__desc-another">
+                            <p class="user__name">Arnold.J</p>
+                            <p class="user__position">UI designer</p>
+                            <p class="user__message">Hi!&#128075 I cheked the layout again ...</p>
+                        </div>
+                    </div>
+
+                    <div class="item item-another">
+                        <div class="image">
+                            <figure class="avatar-container">
+                                <img src="./icon/junge2.png" alt="avatar__img" class="avatar" />
+                        </div>
+                        <div class="user__desc user__desc-another">
+                            <p class="user__name">Fannie.K</p>
+                            <p class="user__position">HR manager</p>
+                            <p class="user__message">okay!</p>
+                        </div>
+                    </div>
+
+                    <div class="item item-another">
+                        <div class="image">
+                            <figure class="avatar-container">
+                                <img src="./icon/junge2.png" alt="avatar__img" class="avatar" />
+                        </div>
+                        <div class="user__desc user__desc-another">
+                            <p class="user__name">Isaac.A</p>
+                            <p class="user__position">SMM manager</p>
+                            <p class="user__message">I don't think we're going to...</p>
+                        </div>
+                    </div>
+
+                    <div class="item item-another">
+                        <div class="image">
+                            <figure class="avatar-container">
+                                <img src="./icon/junge2.png" alt="avatar__img" class="avatar" />
+                        </div>
+                        <div class="user__desc user__desc-another">
+                            <p class="user__name">Jacob</p>
+                            <p class="user__position">UX designer</p>
+                            <p class="user__message">Sorry,Friend! I won't do it..</p>
+                        </div>
+                    </div>
+
+                    <div class="item item-another">
+                        <div class="image">
+                            <figure class="avatar-container">
+                                <img src="./icon/junge2.png" alt="avatar__img" class="avatar" />
+                        </div>
+                        <div class="user__desc user__desc-another">
+                            <p class="user__name">Lisa.O</p>
+                            <p class="user__position">Project manager</p>
+                            <p class="user__message">Sent you the file</p>
+                        </div>
+                    </div>
+
+                    <div class="item item-another">
+                        <div class="image">
+                            <figure class="avatar-container">
+                                <img src="./icon/junge2.png" alt="avatar__img" class="avatar" />
+                        </div>
+                        <div class="user__desc user__desc-another">
+                            <p class="user__name">Michael.B</p>
+                            <p class="user__position">Project manager</p>
+                            <p class="user__message">Sent you the file</p>
+                        </div>
+                    </div>
+
+                    <div class="item item-another">
+                        <div class="image">
+                            <figure class="avatar-container">
+                                <img src="./icon/junge2.png" alt="avatar__img" class="avatar" />
+                        </div>
+                        <div class="user__desc user__desc-another">
+                            <p class="user__name">Michael.B</p>
+                            <p class="user__position">Project manager</p>
+                            <p class="user__message">Sent you the file</p>
+                        </div>
+                    </div>
+
+                    <div class="item item-another">
+                        <div class="image">
+                            <figure class="avatar-container">
+                                <img src="./icon/junge2.png" alt="avatar__img" class="avatar" />
+                        </div>
+                        <div class="user__desc user__desc-another">
+                            <p class="user__name">Michael.B</p>
+                            <p class="user__position">Project manager</p>
+                            <p class="user__message">Sent you the file</p>
+                        </div>
+                    </div>
+
+                    <div class="image">
+                        <figure class="avatar-container">
+                            <img src="./icon/junge2.png" alt="avatar__img" class="avatar" />
+                    </div>
+                    <div class="user__desc user__desc-another">
+                        <p class="user__name">Michael.B</p>
+                        <p class="user__position">Project manager</p>
+                        <p class="user__message">Sent you the file</p>
+                    </div>
+                    </li>
+            </ul>
+        </section>
+        <section class="chat">
+            <header class="chat-header">
+                <div class="chat__user">
+                    <figure class="user-container">
+                        <img src="./icon/junge2.png" alt="avatar" class="user-img">
+                    </figure>
+                    <div class="user__online__pointer"></div>
+                    <p class="header__user__name">Michael.B</p>
+                    <p class="user__web__icon">Online</p>
+                </div>
+                <div class="wrapper__btn">
+                    <input class="input__text" type="text">
+                    <span class="input__icon"><i class="lab la-sistrix"></i></span>
+                    <button class="header__audio__btn" type="button">
+                        <i class="las la-microphone"></i>
+                    </button>
+                    <button class="header__video__btn" type="button">
+                        <i class="las la-video"></i>
+                    </button>
+                </div>
+
+            </header>
+            <ul class="correspondence">
+                <li class="list__date">Juli 29, Tuesday</li>
+                <time class="list__time-right">12:25</time>
+                <li class="letter__list--right">Hello!</li>
+                <li class="letter__list--left">How are you doing today?</li>
+                <span class="viewed__right">viewed at</span>
+                <time class="list__time-left">12:28</time>
+                <li class="letter__list-left">Hi!&#128075 </li>
+                <li class="letter__list__left--second">I'm fine, thanks. And you?</li>
+                <time class="list__time--right">12:29</time>
+                <li class="letter__list__right--second">Okay, thank you very much for the speed&#128077</li>
+                <span class="viewed-right">viewed at</span>
+                <time class="list__time__left--second">12:30</time>
+                <li class="letter__list__left--third">Catch &#128522</li>
+                <li class="letter__list__left--fourth">
+                    <span class="icon__file"><i class="las la-file-excel"></i></span>
+                    <p class="file__doc">Brief.doc</p>
+                    <p class="file__weight">148 KB</p>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <section class="chat-footer">
+                <input class="placeholder__message" type="text" placeholder="Write a message...">
+                <div class="chat__footer__btn">
+                    <button class="footer__image__btn">
+                        <i class="las la-image"></i>
+                    </button>
+                    <button class="footer__auduo__btn">
+                        <i class="las la-microphone"></i>
+                    </button>
+                    <button class="footer__message__btn">
+                        <i class="las la-paper-plane"></i>
+                    </button>
+                </div>
+            </section>
+        </section>
+        <section class="sidebar">
+            <div class="sidebar__btn">
+                <button class="points__btn">
+                    <i class="las la-ellipsis-h"></i>
+                </button>
+                <button class="warning__btn">
+                    <i class="las la-exclamation-circle"></i>
+                </button>
+                <button class="notification__btn">
+                    <i class="las la-bell-slash"></i>
+                </button>
+                <button class="trash__btn">
+                    <i class="las la-trash-alt"></i>
+                </button>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector(".menu");
+            const burger = document.querySelector(".burger");
+
+            menu.classList.toggle("menu--open");
+            burger.classList.toggle("burger--open");
+        }
+    </script>
+</body>
+
+</html>

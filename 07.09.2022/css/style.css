@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+@font-face {
+    font-family: 'DIN';
+    src: url('../fonts/DIn_Light_regular.ttf');
+}
+
+@font-face {
+    font-family: 'Hadlee';
+    src: url('../fonts/fonts/Handlee-Regular.ttf');
+}
+
+:root {
+    --white-color: #FFFFFF;
+    --black-color: #000000;
+    --gray-dark-color: #333333;
+    --beige-color: #e2d9c4;
+    --gray-color: #5B6460;
+}
+
+html,
+body {
+    background-color: var(--beige-color);
+    background: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+}
+
+header {
+    width: 95%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 15%;
+    height: 70%;
+    background-image: url('../img/logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 80px;
+    position: relative;
+}
+
+.logo_name {
+    position: absolute;
+    top: 65px;
+    left: 222px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 10px;
+
+}
+
+header>nav {
+    width: 40%;
+    height: 100%;
+}
+
+.header_menu_list {
+    font-family: 'DIN';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+.header_menu_list a {
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.main_content {
+    display: flex;
+    justify-content: center;
+}
+
+.fotoshoot_img {
+    background-image: url('../img/collage.jpg');
+    background-size: 100%;
+    width: 800px;
+    height: 500px;
+    margin-top: 60px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'DIN';
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.text_inner {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'DIN';
+    font-style: italic;
+    font-size: 18px;
+}
+
+.description {
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'DIN';
+    font-style: italic;
+    color: var(--gray-dark-color);
+    font-size: 20px;
+    word-spacing: 5px;
+}
+
+.footer_text {
+    margin-top: 60px;
+    text-align: center;
+
+    font-family: 'Open Sans', sans-serif;
+    color: var(--gray-color);
+}
+
+.following_paths {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'DIN';
+    font-size: 18px;
+}
+
+.instagram_icon {
+    background-image: url('../icons/instagram.png');
+    block-size: 100%;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    margin-left: 910px;
+}
+
+.facebook_icon {
+    background-image: url('../icons/facebook.png');
+    background-repeat: no-repeat;
+    block-size: 100%;
+    width: 32px;
+    height: 32px;
+    margin-left: 18px;
+}
+
+footer>div {
+    display: inline-block;
+    margin-bottom: 50px;
+}
+   

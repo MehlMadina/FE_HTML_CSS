@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap');
+
+:root {
+    --black-color: #000000;
+    --white-color: #FFFFFF;
+    --gray-color: #5b6460;
+}
+
+.block__body {
+    padding: 85px;
+    padding-top: 0;
+}
+
+.block__title {
+    text-align: center;
+    font-family: 'Cinzel', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.block__row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.block__img {
+    width: 450px;
+    height: 660px;
+}
+
+.block__column-second {
+    margin-top: 10em;
+    text-align: center;
+}
+
+.block__column {
+    text-align: center;
+}
+
+.block__subtitle {
+    font-family: 'Cinzel';
+    position: relative;
+    top: 30px;
+    font-size: 30px;
+}
+
+.block__text {
+    font-family: 'Open Sans', sans-serif;
+    color: var(--gray-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    position: relative;
+    top: 30px;
+}
+
+.block__link {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    color: var(--gray-color);
+    position: relative;
+    top: 30px;
+    font-size: 16px;
+}
+
+.block__link:hover {
+    color: var(--black-color);
+}
+
+.block__link::after {
+    content: url('../icons/arrow-right-1.png');
+    position: relative;
+    top: 1px;
+    left: 5px;
+}

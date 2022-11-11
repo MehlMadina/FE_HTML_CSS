@@ -1,0 +1,425 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.logo {
+  margin-right: 15px;
+  color: #000000;
+}
+
+.logo::before {
+  content: url("../icons/logo.png");
+  position: relative;
+  top: 7px;
+  right: 8px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 230px;
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 40px 0;
+  box-sizing: border-box;
+  color: #7b7b7b;
+}
+
+.nav {
+  padding-bottom: 200px;
+}
+
+.nav__item {
+  list-style: none;
+}
+
+.nav__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.nav__list {
+  padding: 0;
+}
+
+.nav__item:hover {
+  border-left: 3px solid black;
+  transform: scale(1);
+  transition-duration: 500ms;
+}
+
+.button {
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #7b7b7b;
+  cursor: pointer;
+}
+
+.icon {
+  font-size: 1.5rem;
+  position: relative;
+  top: 4px;
+}
+
+a {
+  text-decoration: none;
+  color: #7b7b7b;
+}
+
+.nav__text {
+  color: black;
+  font-weight: 500;
+}
+
+.icon__first {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.nav__item-first {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.card {
+  position: relative;
+}
+.card__row {
+  display: flex;
+  flex-direction: column;
+  margin-left: 21em;
+  height: 100%;
+  padding-top: 1.3em;
+  position: relative;
+}
+
+.card__lage {
+  position: absolute;
+  top: 60px;
+  font-size: 15px;
+  color: #7b7b7b;
+}
+
+.card__avatar {
+  margin-left: 5.5em;
+  font-size: 50px;
+  position: absolute;
+  top: 40px;
+}
+
+.input {
+  position: absolute;
+  top: 3em;
+  left: 50em;
+}
+.search {
+  height: 35px;
+  width: 15em;
+  background-color: #f1f1f1;
+  color: #7b7b7b;
+  border: none;
+}
+
+.button__search {
+  margin-right: -20em;
+  height: 37px;
+  width: 37px;
+  background-color: #232222;
+  color: aliceblue;
+  border-radius: none;
+  cursor: pointer;
+}
+
+.courses {
+  margin-left: 18em;
+  margin-top: 4em;
+  position: relative;
+}
+.courses__title {
+  font-weight: 500;
+  font-size: 30px;
+}
+.courses__link {
+  position: absolute;
+  top: 15px;
+  left: 47em;
+  color: #000000;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.list__item {
+  display: flex;
+  gap: 3rem;
+  margin-left: 15.5em;
+  margin-top: 2.5em;
+  list-style-type: none;
+  color: #7b7b7b;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.list__item-first {
+  color: #000000;
+}
+
+.img {
+  width: 280px;
+  height: 140px;
+  background-color: #3838b1;
+  border: 1px solid#3838b1;
+}
+
+.block {
+  margin-top: 1.3rem;
+  margin-left: 17em;
+  display: flex;
+  align-items: center;
+}
+
+.block__text {
+  border: 1px solid #bdb4b4;
+  width: 30em;
+  height: 140px;
+  position: relative;
+}
+
+.block__text-title {
+  padding-left: 5rem;
+  color: #9b9898;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+.block__text-content {
+  position: absolute;
+  top: 27px;
+  padding-left: 5rem;
+  width: 10em;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.block__second {
+  margin-top: 1.3rem;
+  margin-left: 17em;
+  border: 1px solid #bdb4b4;
+  width: 763px;
+  height: 155px;
+  color: #f1f1f1;
+  background-color: #191829;
+}
+
+.block__text-title2 {
+  margin-top: 30px;
+  padding-left: 28px;
+  width: 11em;
+  font-size: 25px;
+}
+
+.img__secong {
+  width: 280px;
+  height: 140px;
+  background-color: #ba6bb9;
+  border: 1px solid #ba6bb9;
+}
+
+.img__third {
+  width: 280px;
+  height: 140px;
+  background-color: #f0b430;
+  border: 1px solid #f0b430;
+}
+
+.border__line {
+  position: absolute;
+  margin-left: 67.5em;
+  border-left: 1px solid #c4bebe;
+  height: 100%;
+  top: 0;
+}
+
+.timetable {
+  position: absolute;
+  bottom: 54em;
+  left: 72em;
+  display: flex;
+  gap: 8rem;
+}
+
+.schedule {
+  color: #000000;
+  font-weight: 500;
+  font-size: 25px;
+}
+.months {
+  align-self: center;
+}
+
+select {
+  border: 1px solid #c4bebe;
+  border-radius: 6px;
+  width: 6.2rem;
+  height: 2.3rem;
+  font-size: 15px;
+  color: #827e7e;
+}
+
+.calendar {
+  position: absolute;
+  left: 71em;
+  top: 9em;
+}
+
+.calendar__item:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+table {
+  text-align: center;
+  width: 22em;
+  height: 15em;
+}
+
+.calendar__item--gray {
+  color: #7b7b7b;
+}
+
+.main__date {
+  border: 1px solid black;
+  width: 2.5em;
+  background-color: #000000;
+  color: #f1f1f1;
+}
+
+.link__findmore {
+  padding-left: 29px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.section {
+  position: absolute;
+  top: 25.5em;
+  left: 72em;
+  display: flex;
+  gap: 14.5rem;
+}
+
+.upcoming {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.button__second {
+  width: 40px;
+  height: 22px;
+  margin-top: 10px;
+  color: #7b7b7b;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.list__timetable {
+  position: absolute;
+  top: 30em;
+  left: 68em;
+  list-style-type: none;
+}
+
+.list__timetable-hour {
+  padding: 16px;
+  color: #7b7b7b;
+  font-size: 14px;
+}
+
+.list__timetable-hour:after {
+  content: "";
+  width: 20em;
+  height: 1px;
+  background-color: #d2cfcf;
+  position: absolute;
+  left: 9em;
+  display: flex;
+}
+
+.last__block-first {
+  width: 17em;
+  height: 4em;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 34.2em;
+  left: 75.5em;
+}
+
+.last__block-second {
+  width: 17em;
+  height: 4em;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 43.3em;
+  left: 75.5em;
+}
+
+.last__block-third {
+  width: 17em;
+  height: 4em;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 52.5em;
+  left: 75.5em;
+}
+
+.last__block-img {
+  width: 38px;
+  height: 38px;
+  background-color: #f0b430;
+  position: absolute;
+  left: 8px;
+  top: 12px;
+}
+
+.time__listing {
+  font-size: 12px;
+  color: #827e7e;
+  margin-left: 4.5em;
+}
+
+.subject {
+  font-size: 15px;
+  margin-left: 3.6em;
+  position: relative;
+  bottom: 0.5em;
+}
+
+.last__block-img2 {
+  width: 38px;
+  height: 38px;
+  background-color: #ba6bb9;
+  position: absolute;
+  left: 8px;
+  top: 12px;
+}
+
+.last__block-img3 {
+  width: 38px;
+  height: 38px;
+  background-color: #3838b1;
+  position: absolute;
+  left: 8px;
+  top: 12px;
+}
